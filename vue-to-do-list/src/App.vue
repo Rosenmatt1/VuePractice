@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-  
+  <h1>{{todos[0].title}}</h1>
   </div>
 </template>
 
@@ -42,7 +42,6 @@ export default {
     margin: 0;
     padding: 0;
   }
-
   body {
     font-family: 'Avenir', Helvetica, sans-serif;
     line-height: 1.4;
