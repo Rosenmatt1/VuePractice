@@ -1,16 +1,19 @@
 <template>
   <div id="app">
+    <Header />
     <Todos v-bind:todos="todos" v-on:del-todo="deleteTodo"/>
   </div>
 </template>
 
 <script>
+import Header from './components/Layout/Header.vue'
 import Todos from './components/Todo.vue'
 
 export default {
   name: 'app',
   components: {
     Todos,
+    Header
   },
   data() {
     return {
