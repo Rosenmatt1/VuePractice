@@ -32,6 +32,11 @@ export default {
         }
       ]
     }
+  },
+  methods: {
+    deleteTodo(id) {
+      this.todos = this.todos.filter(todo => todo.id !== id)
+    }
   }
 }
 </script>
