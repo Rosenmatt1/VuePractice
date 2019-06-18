@@ -8,7 +8,7 @@
 
 <script>
 import Header from './components/Layout/Header'
-import Todos from './components/Todo'
+import Todos from './components/Todos'
 import AddToDo from './components/AddToDo'
 
 export default {
