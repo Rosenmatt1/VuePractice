@@ -20,7 +20,6 @@ export default {
     addTodo(e) {
       e.preventDefault()
       const newTodo = {
-        id: uuid.v4(),
         title: this.title,
         completed: false
       }

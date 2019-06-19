@@ -49,10 +49,13 @@ export default {
     }
   },
   created() {
-      axios.get('https://jsonplaceholder.typicode.com/todos')
+      axios.get('https://jsonplaceholder.typicode.com/todos?_limit=5')
         .then(res => this.todos = res.data)
-        // .then(json => console.log(json))
         .catch(err => console.log(err))
+      // fetch('https://jsonplaceholder.typicode.com/todos?_limit=5')
+      //   .then(response => response.json())
+      //   .then(json => this.todos = json.data)
+      //   console.log(this.todos)
     }
 }
 </script>
