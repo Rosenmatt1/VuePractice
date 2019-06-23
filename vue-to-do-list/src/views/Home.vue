@@ -16,6 +16,15 @@ export default {
     Todos,
     AddToDo
   },
+   created() {
+      axios.get('https://jsonplaceholder.typicode.com/todos?_limit=5')
+        .then(res => this.todos = res.data)
+        .catch(err => console.log(err))
+      // fetch('https://jsonplaceholder.typicode.com/todos?_limit=5')
+      //   .then(response => response.json())
+      //   .then(json => this.todos = json.data)
+      //   console.log(this.todos)
+    },
   data() {
     return {
       todos: []
@@ -37,15 +46,7 @@ export default {
         .catch(err =>console.log(err))
     }
   },
-  created() {
-      axios.get('https://jsonplaceholder.typicode.com/todos?_limit=5')
-        .then(res => this.todos = res.data)
-        .catch(err => console.log(err))
-      // fetch('https://jsonplaceholder.typicode.com/todos?_limit=5')
-      //   .then(response => response.json())
-      //   .then(json => this.todos = json.data)
-      //   console.log(this.todos)
-    }
+ 
 }
 </script>
 
