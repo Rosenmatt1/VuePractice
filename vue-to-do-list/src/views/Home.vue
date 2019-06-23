@@ -16,6 +16,9 @@ export default {
     Todos,
     AddToDo
   },
+  mounted() {
+    console.log("Mounted Method")
+  },
    created() {
       axios.get('https://jsonplaceholder.typicode.com/todos?_limit=5')
         .then(res => this.todos = res.data)
