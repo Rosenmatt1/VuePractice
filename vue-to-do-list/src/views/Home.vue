@@ -30,7 +30,8 @@ export default {
     },
   data() {
     return {
-      todos: []
+      todos: [],
+      attribute: true
     }
   },
   methods: {
