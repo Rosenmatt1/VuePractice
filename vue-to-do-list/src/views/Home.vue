@@ -31,7 +31,7 @@ export default {
   data() {
     return {
       todos: [],
-      attribute: true
+      attribute: "tester"
     }
   },
   methods: {
